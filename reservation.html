@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>  <title>Hotel Resort Website </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+
+<link rel="stylesheet" href="assig4.css">
+
+  </head>
+
+  <body>
+      <a href="assig4.html"></a>
+
+      <div class="hotel_reserve_box">
+        <h3> Hotel Reservation Form </h3><br>
+        <form>
+            <div class="form-group">
+                <label>Room/Suite Type</label>
+                <select class="form-control" id="room_type" onchange="finalCost()">
+                    <option value="0" selected>Select Room/Suite </option>
+                    <option value="1"> Standard </option>
+                    <option value="2"> Deluxe </option>
+                    <option value="3"> Superior Deluxe </option>
+                    <option value="4"> Premier Deluxe  </option>
+                    <option value="5"> Executive Suite </option>
+                    <option value="6"> Junior Suite </option>
+                    <option value="7"> Honeymoon Suite </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Number of room/suite</label>
+                <select class="form-control" id="room_number" onchange="finalCost()">
+                    <option value="0"> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Number of persons</label>
+                <select class="form-control" id="person_number" onchange="finalCost()">
+                    <option value="0"> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Number of children</label>
+                <select class="form-control" id="child_number" onchange="finalCost()">
+                    <option value="0"> 0 </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Restaurant facilities?</label>
+                <select class="form-control" id="res_facilities" onchange="finalCost()">
+                    <option value="0" selected> Do you want restaurant facilities? </option>
+                    <option value="2"> Yes </option>
+                    <option value="0"> No </option>
+                </select>
+            </div><br>
+            <div class="form-group">
+                <label>Total Cost ($) : </label>
+                <span id="result" style="background-color: #7527b0;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
+            </div>
+        </form>
+    </div>
+
+
+      <script src="assig4.js"></script>
+  </body>
